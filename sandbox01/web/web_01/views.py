@@ -21,7 +21,7 @@ def talk(request):
         title = data.get('title')
         email = data.get('email')
         comment = data.get('comment')
-        
+        print(title, email, comment)
         new = contract()
         new.title = title
         new.email = email
