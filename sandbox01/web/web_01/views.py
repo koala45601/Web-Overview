@@ -7,3 +7,6 @@ def test(request):
 
 def Home(request):
     return render(request,'HomePage.html')
+
+def Service(request):
+    return render(request,'service.html')
