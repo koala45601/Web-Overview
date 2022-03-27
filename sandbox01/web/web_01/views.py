@@ -22,11 +22,10 @@ def talk(request):
         email = data.get('email')
         comment = data.get('comment')
         
-       # print(tile, email, comment)
-        new1 = contract()
-        new1.title = title
-        new1.email = email
-        new1.comment = comment
-        new1.save()
+        new = contract()
+        new.title = title
+        new.email = email
+        new.comment = comment
+        new.save()
         
     return render(request,'talk_me.html')

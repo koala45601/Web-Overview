@@ -8,4 +8,4 @@ class contract(models.Model):
     comment = models.TextField(blank=True,null=True)
     
     def __str__(self):
-        return self.title +'   ' +self.email+'   ' +self.comment
+        return self.title +self.email+self.comment
