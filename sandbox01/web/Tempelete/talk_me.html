@@ -4,6 +4,14 @@
 {% block title %}Talk Me{% endblock title%}
 {% block content %}
 
+{% if status %}
+
+    {% if status == 'suscess' %}
+        <a> ทำการส่งข้อมูลเรียบร้อยแล้ว โปรรอเจ้าหน้าที่ติดต่อกลับ</a>
+
+    {%  endif %}
+{%  endif %}
+
 <div class="container">
 
     <form method="POST" >
