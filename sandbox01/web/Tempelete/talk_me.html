@@ -7,7 +7,6 @@
 {% if status %}
 
     {% if status == 'suscess' %}
-        <a> ทำการส่งข้อมูลเรียบร้อยแล้ว โปรรอเจ้าหน้าที่ติดต่อกลับ</a>
 
     {%  endif %}
 {%  endif %}
@@ -29,7 +28,12 @@
             <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
+        <script>
+            function myFunction() {
+              alert("ทำการส่งข้อมูลเรียบร้อยแล้ว โปรรอเจ้าหน้าที่ติดต่อกลับ");
+            }
+            </script>
     </form>
 </div>
 <br><br><br><br><br><br><br><br><br>
